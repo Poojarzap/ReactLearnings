@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Posts from './components/Abc';
 
 
 class Greeting extends React.Component{
@@ -44,12 +45,7 @@ function Counter(){
 
 function App() {
   return(
-  <div>
-    <Header/>
-    <Greeting name="pooja"/>
-    <Counter/>
-    <Footer/>
-  </div>
+  <Posts/>
 )
 }
 

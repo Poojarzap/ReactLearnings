@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import App from './App';
 import Hooks from './hooks';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hooks />
+    <App />
   </React.StrictMode>
 );
 
