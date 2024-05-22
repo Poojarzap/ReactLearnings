@@ -22,3 +22,29 @@
   content: "";
   display: table;
 }
+
+.status{
+  color: #222;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.game-info{
+  color:  #888;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
