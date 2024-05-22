@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Header from "./components/Header";
+import React, { useContext, useState } from "react";
+//import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Posts from './components/Abc';
 
@@ -43,9 +43,30 @@ function Counter(){
   )
 }
 
+//useContext
+const ThemeContext = React.createContext('light')
+console.log(ThemeContext);
+
+function Header(){
+  const theme = useContext(ThemeContext)
+  console.log(theme)
+  return(
+    <header style={{
+      backgroundColor : theme === 'light' ? '#fff' : '#000',
+      color : theme === 'light' ?  '#000' : '#fff'
+    }}>
+      <h1> Header </h1>
+    </header>
+    
+  )
+}
+
 function App() {
   return(
-  <Posts/>
+  <ThemeContext.Provider value="dark">
+    <Header/>
+    
+  </ThemeContext.Provider>
 )
 }
 
